@@ -12,10 +12,10 @@ class EditUser extends Component {
         // store the related to the user information into the state
         // these should match the user object from the API
         this.state = {
-            title: '',
-            first: '',
-            lastName: '',
-            quote: '',
+            VideogameName: '',
+            Classification: '',
+            Platform: '',
+            Price: '',
             picture: ''
         };
 
@@ -33,10 +33,10 @@ class EditUser extends Component {
                 //on resonse set the state values to match empty state values set in the constructor
                 this.setState({
                     _id: response.data._id,
-                    title: response.data.title,
-                    first: response.data.first,
-                    lastName: response.data.lastName,
-                    quote: response.data.quote,
+                    VideogameName: response.data.VideogameName,
+                    Classification: response.data.Classification,
+                    Platform: response.data.Platform,
+                    Price: response.data.Price,
                     picture: response.data.picture,
                 });
             })
@@ -83,13 +83,13 @@ class EditUser extends Component {
                                 <div className="field">
                                     <label className="label"> VideogameName: </label>
                                     <div className="control">
-                                        <input className="input is-small" type="text" name="title" value={this.state.title} onChange={this.handleChange} id="form" />
+                                        <input className="input is-small" type="text" name="VideogameName" value={this.state.VideogameName} onChange={this.handleChange} id="form" />
                                     </div>
                                 </div>
                                 <div className="field">
                                     <label className="label"> Classification: </label>
                                     <div className="control">
-                                        <input className="input is-small" type="text" name="first" value={this.state.first} onChange={this.handleChange} id="form" />
+                                        <input className="input is-small" type="text" name="Classification" value={this.state.Classification} onChange={this.handleChange} id="form" />
                                     </div>
                                 </div>
                                 <div className="field">
@@ -104,13 +104,13 @@ class EditUser extends Component {
                                 <div className="field">
                                     <label className="label"> Platform: </label>
                                     <div className="control">
-                                        <input className="input is-small" type="text" name="lastName" value={this.state.lastName} onChange={this.handleChange} id="form" />
+                                        <input className="input is-small" type="text" name="Platform" value={this.state.Platform} onChange={this.handleChange} id="form" />
                                     </div>
                                 </div>
                                 <div className="field">
                                     <label className="label"> Price: </label>
                                     <div className="control">
-                                        <input className="input is-small" type="text" name="quote" value={this.state.quote} onChange={this.handleChange} id="form" />
+                                        <input className="input is-small" type="text" name="Price" value={this.state.Price} onChange={this.handleChange} id="form" />
                                     </div>
                                 </div>
                             </div>

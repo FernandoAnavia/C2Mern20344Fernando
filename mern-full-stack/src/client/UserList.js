@@ -66,11 +66,11 @@ class UserList extends Component {
             <User
                 key={u._id}
                 id={u._id}
-                title={u.title}
-                first={u.first}
-                lastName={u.lastName}
+                VideogameName={u.VideogameName}
+                Classification={u.Classification}
+                Platform={u.Platform}
                 image={u.picture}
-                quote={u.quote}
+                Price={u.Price}
                 //you must include the handleDelete method to use in child components
                 handleDelete={this.handleDelete}
             />

@@ -62,13 +62,13 @@ class CreateUser extends Component {
                             <div className="field">
                                 <label className="label"> VideogameName: </label>
                                 <div className="control">
-                                    <input className="input is-small" type="text" name="title" value={this.state.title} onChange={this.handleChange} id="form" />
+                                    <input className="input is-small" type="text" name="VideogameName" value={this.state.VideogameName} onChange={this.handleChange} id="form" />
                                 </div>
                             </div>
                             <div className="field">
                                 <label className="label"> Classification: </label>
                                 <div className="control">
-                                    <input className="input is-small" type="text" name="first" value={this.state.first} onChange={this.handleChange} id="form" />
+                                    <input className="input is-small" type="text" name="Classification" value={this.state.Classification} onChange={this.handleChange} id="form" />
                                 </div>
                             </div>
                              <div className="field">
@@ -83,13 +83,13 @@ class CreateUser extends Component {
                             <div className="field">
                                 <label className="label"> Platform: </label>
                                 <div className="control">
-                                    <input className="input is-small" type="text" name="lastName" value={this.state.lastName} onChange={this.handleChange} id="form" />
+                                    <input className="input is-small" type="text" name="Platform" value={this.state.Platform} onChange={this.handleChange} id="form" />
                                 </div>
                             </div>
                             <div className="field">
                                 <label className="label"> Price: </label>
                                 <div className="control">
-                                    <input className="input is-small" type="text" name="quote" value={this.state.quote} onChange={this.handleChange} id="form" />
+                                    <input className="input is-small" type="text" name="Price" value={this.state.Price} onChange={this.handleChange} id="form" />
                                 </div>
                             </div>
                         </div>
