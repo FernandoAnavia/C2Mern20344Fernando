@@ -73,7 +73,7 @@ class EditUser extends Component {
             <div className="is-fluid">
                 {/*on form submit call handleSubmit()*/}
                 <form onSubmit={this.handleSubmit}>
-                    <h2 className="title is-1 has-text-primary">Edit User</h2>
+                    <h2 className="title is-1 has-text-primary">Edit videogame</h2>
                     <hr />
                     {/*main container for input fields*/}
                     <div className="container">
@@ -81,13 +81,13 @@ class EditUser extends Component {
                         <div className="columns">
                             <div className="column is-half">
                                 <div className="field">
-                                    <label className="label"> Title: </label>
+                                    <label className="label"> VideogameName: </label>
                                     <div className="control">
                                         <input className="input is-small" type="text" name="title" value={this.state.title} onChange={this.handleChange} id="form" />
                                     </div>
                                 </div>
                                 <div className="field">
-                                    <label className="label"> First Name: </label>
+                                    <label className="label"> Classification: </label>
                                     <div className="control">
                                         <input className="input is-small" type="text" name="first" value={this.state.first} onChange={this.handleChange} id="form" />
                                     </div>
@@ -102,13 +102,13 @@ class EditUser extends Component {
                             {/*SECOND COLUMN*/}
                             <div className="column">
                                 <div className="field">
-                                    <label className="label"> Last Name: </label>
+                                    <label className="label"> Platform: </label>
                                     <div className="control">
                                         <input className="input is-small" type="text" name="lastName" value={this.state.lastName} onChange={this.handleChange} id="form" />
                                     </div>
                                 </div>
                                 <div className="field">
-                                    <label className="label"> Quote: </label>
+                                    <label className="label"> Price: </label>
                                     <div className="control">
                                         <input className="input is-small" type="text" name="quote" value={this.state.quote} onChange={this.handleChange} id="form" />
                                     </div>

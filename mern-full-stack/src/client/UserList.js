@@ -81,10 +81,10 @@ class UserList extends Component {
             <div className="is-fluid">
                 {/*Navigation bar*/}
                 <nav className="navbar">
-                    <h1 className="navbar-item title is-1 has-text-primary">List of Users</h1>
+                    <h1 className="navbar-item title is-1 has-text-primary">List of Videogames</h1>
                     {/*when this button is pressed, CreateUser component will be rendered by using React Router*/}
                     <Link to={'/create-user'} className="navbar-item navbar-end">
-                        <button className="button is-warning" type="button">Create new user</button>
+                        <button className="button is-warning" type="button">Create new videogame</button>
                     </Link>
                 </nav>
                 <hr />
@@ -97,7 +97,7 @@ class UserList extends Component {
                 {/*FOOTER*/}
                 <footer className="footer has-background-primary">
                     <div className="content has-text-centered">
-                        <p className="has-text-white-bis"><strong>Random User API</strong> styled with Bulma.</p>
+                        <p className="has-text-white-bis"><strong>VideoGames BackEnd project</strong> styled with Bulma.</p>
                     </div>
                 </footer>
             </div>

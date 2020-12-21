@@ -5,13 +5,13 @@ const bodyParser = require('body-parser');
 
 const server = express();
 // the value for dbname should match your database name
-const dbname = 'usersdb';
+const dbname = 'Videogames';
 
 // serve files from the dist directory
 server.use(express.static('dist'));
 
 // the URL to the DB will be loaded from an env variable or using the MongoDB Clour
-const dbroute = process.env.MONGODB_URL || `mongodb+srv://<USERNAME>:<PASSWORD>@users-bm6td.mongodb.net/test?retryWrites=true&w=majority`;
+const dbroute = process.env.MONGODB_URL || `mongodb+srv://Admin:Dorset123@databasec1.8zbg0.mongodb.net/test`;
 
 let db;
 
